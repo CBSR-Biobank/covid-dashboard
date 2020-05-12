@@ -1,0 +1,43 @@
+@import 'themes';
+
+@include nb-install-component() {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  padding: nb-theme(card-padding);
+
+  .patients-pie-chart {
+    margin: 1.5rem 0;
+    width: 250px;
+
+    .echart {
+      /*
+      display: block;
+      width: 100%;
+      */
+      height: 13.75rem;
+    }
+  }
+
+  .chart-values {
+    display: flex;
+  }
+
+  .chart-value {
+    flex: 1;
+  }
+
+  .patients-pie-legend ::ng-deep {
+    .legends {
+      padding: 0;
+      margin-left: 0;
+    }
+
+    .legend {
+      flex: 1;
+      margin-left: 0;
+      justify-content: flex-start;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<nb-layout windowMode>
+  <nb-layout-header fixed>
+    <app-header></app-header>
+  </nb-layout-header>
+
+  <nb-sidebar>
+    <nb-menu [items]="menu"></nb-menu>
+  </nb-sidebar>
+
+  <nb-layout-column>
+    <div class="row">
+      <div class="col-xxl-3">
+        <app-patient-age-dist-card [report]="report"></app-patient-age-dist-card>
+      </div>
+      <div class="col-xxl-3">
+        <app-patient-gender-card [report]="report"></app-patient-gender-card>
+      </div>
+      <div class="col-xxl-3">
+        <app-patient-comorbidity [report]="report"></app-patient-comorbidity>
+      </div>
+      <div class="col-xxl-3">
+        <app-positive-symptomatic [report]="report"></app-positive-symptomatic>
+      </div>
+      <div class="col-xxl-3">
+        <app-negative-symptomatic [report]="report"></app-negative-symptomatic>
+      </div>
+      <div class="col-xxl-3">
+        <app-asymptomatic-comorbidity [report]="report"></app-asymptomatic-comorbidity>
+      </div>
+      <div class="col-xxl-3">
+        <app-positive-gender-age-card [report]="report"></app-positive-gender-age-card>
+      </div>
+    </div>
+  </nb-layout-column>
+</nb-layout>

@@ -1,0 +1,19 @@
+<nb-card [size]="breakpoint.width >= breakpoints.md ? 'medium' : 'giant'">
+  <nb-card-header [innerHtml]="header"></nb-card-header>
+  <nb-card-body>
+    <div class="patients-pie-chart">
+      <div echarts [options]="option" class="echart" (chartInit)="onChartInit($event)"></div>
+    </div>
+
+    <div class="chart-values h5" *ngIf="data">
+      <span class="chart-value">
+        {{ data[0].value }} <small>({{ data[0].percent }}%)</small>
+      </span>
+      <span class="chart-value">
+        {{ data[1].value }} <small>({{ data[1].percent }}%)</small>
+      </span>
+    </div>
+
+    <app-chart-legend class="patients-pie-legend" [legendItems]="chartLegend"></app-chart-legend>
+  </nb-card-body>
+</nb-card>

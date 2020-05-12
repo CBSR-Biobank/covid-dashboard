@@ -1,0 +1,6 @@
+<nb-card [size]="'medium'">
+  <nb-card-header [innerHtml]="heading"></nb-card-header>
+  <nb-card-body>
+    <div echarts [options]="chartOption" class="echart" (chartInit)="onChartInit($event)"></div>
+  </nb-card-body>
+</nb-card>

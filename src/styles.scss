@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'themes';
 
-@import '~@nebular/theme/styles/prebuilt/default';
+@import '~@nebular/theme/styles/prebuilt/cosmic';
 @import '~@nebular/auth/styles/all';
 
 @include nb-install() {
